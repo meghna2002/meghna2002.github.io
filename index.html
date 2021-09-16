@@ -1,0 +1,24 @@
+<html>
+<head> 
+<title> My page </title> 
+<style>h1 {text-align: center;}</style>
+</head>
+<body style="background-color:powderblue;">
+<h1 style = "font-family:'Courier New'">My Cake Shop</h1>
+<p style="text-align:center"><img src="cake.gif" height=250 width=250/></p>
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "59727a12-b75d-44e1-842c-75aa8a041468", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "768f2a69-dea3-4603-b942-760b31545727", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js"
+    document.head.appendChild(t);
+  });
+</script>
+</body>
+
+</html>
